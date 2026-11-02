@@ -2,8 +2,8 @@ sphere = input("Сфера (вода/воздух/почва): ").strip().lower(
 pollutant = input("Загрязнение (нефть/пластик/бумага): ").strip().lower()
 
 
-base_score = 50          # по умолчанию, если ничего не совпало
-recovery_years = None    # по умолчанию срок неизвестен
+base_score = 50         
+recovery_years = None   
 recommendation = "Нужна экспертная оценка."
 
 
@@ -24,7 +24,7 @@ if pollutant == "нефть" or pollutant == "топливо":
         recovery_years = 15
         recommendation = "Поставить фильтры, перейти на чистое топливо."
     else:
-        vuln_factor = 1.0  # если ввели что-то странное
+        vuln_factor = 1.0 
 
 
 elif pollutant == "пластик":
